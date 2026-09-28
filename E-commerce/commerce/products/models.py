@@ -10,7 +10,7 @@ class Product(models.Model):
     p_description = models.TextField()
     p_created_date = models.DateTimeField(auto_now_add=True)
     
-class Electronics(models.Model):
+class Electronics(Product):
     p_brand = models.CharField(max_length=100)
     p_model = models.CharField(max_length=100)
     p_warranty = models.IntegerField(help_text="Warranty period in months")
